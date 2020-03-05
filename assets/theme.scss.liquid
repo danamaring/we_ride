@@ -7108,7 +7108,7 @@ $social-sharing-link-border-color: rgba($color-body-text, 0.1);
 
   40% {
     opacity: 1;
-  }  
+  }
 }
 
 @include keyframes(sk-circleFadeDelay) {
@@ -8768,4 +8768,210 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 .product-recommendations__slide-indicator--active {
   background-color: $color-body-text;
 }
+
+
+@include media-query($medium-up) {
+  .banner-section {
+    text-align: center;
+
+    #subtitle {
+      color: #ffffff;
+    }
+  }
+    .banner-image {
+      background: center / cover no-repeat;
+      padding: 250px 20px;
+    }
+
+    .banner-title {
+      color: #ffffff;
+    }
+
+    .banner-subtitle {
+      color: #ffffff;
+  }
+}
+
+@include media-query($medium-down) {
+  .promo-blocks-section.promo-blocks-section {
+    flex-direction: column;
+  }
+}
+
+@include media-query($medium-up) {
+  .promo-blocks-section.promo-blocks-section {
+    display: flex;
+    text-align: center;
+
+    .promo-blocks-title {
+      color: #ffffff;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .promo-block-subtitle {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  .promo-block-image {
+    background: center / cover no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.testimonial-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-section {
+    padding: 250px 20px;
+  }
+}
+
+.featured-collection__wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 640px) {
+    .featured-collection__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 100%;
+    }
+  }
+  .featured-collection__item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #f7f7f7;
+    padding: 20px;
+  }
+  @media screen and (min-width: 640px) {
+    .featured-collection__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 25%;
+    }
+  }
+
+  //featured collection 2
+  .featured-collection__wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 640px) {
+    .featured-collection__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 100%;
+    }
+  }
+  .featured-collection__item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #f7f7f7;
+    padding: 20px;
+  }
+  @media screen and (min-width: 640px) {
+    .featured-collection__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 25%;
+    }
+  }
+
+  //logo list
+  .logo-bar__wrapper {
+    padding: 20px 5px;
+  }
+  @media screen and (min-width: 640px) {
+    .logo-bar__wrapper {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  .logo-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .logo-bar__item {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  @media screen and (min-width: 640px) {
+    .logo-bar__item {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  //social-bar
+  .social-media-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .social-media-menu-item {
+    margin: 15px;
+  }
+  .social-media-menu [class^="shopify-social-icon-"] {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 640px) {
+    .social-media-menu [class^="shopify-social-icon-"] {
+      font-size: 50px;
+    }
+  }
+
+
+
+
+
+
+
+
 
